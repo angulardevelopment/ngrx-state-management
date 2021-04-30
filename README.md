@@ -4,6 +4,24 @@ state management using ngrx
 packages used-
 @ngrx/store, @ngrx/store-devtools
 
+@ngrx/effects, @ngrx/schematics, @ngrx/entity, @ngrx/schematics@latest
+
+Setup-
+ng generate module Customer
+ng generate class models/customer
+ng generate action customer/store/action/Customer
+ng generate reducer customer/store/reducer/Customer
+ng generate selector customer/store/selector/Customer
+ng generate component customer/CustomerView
+ng generate component customer/CustomerAdd
+
+Add- 
+StoreModule for Feature in Customer Module
+StoreModule.forFeature(customerFeatureKey, reducer),
+
+Add the exports-
+exports: [CustomerViewComponent,CustomerAddComponent]
+
 
 # Ngrx
 
