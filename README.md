@@ -1,3 +1,10 @@
+# About
+state management using ngrx
+
+packages used-
+@ngrx/store, @ngrx/store-devtools
+
+
 # Ngrx
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
