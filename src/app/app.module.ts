@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -10,16 +10,34 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 
 import { CustomerModule } from './customer/customer.module';
-import { reducers, metaReducers } from './reducers';
+// import { reducers, metaReducers } from './reducers';
+import { BasicComponent } from './basic/basic.component';
+import { counterReducer } from './basic/counter.reducer';
+import { ApiCallComponent } from './api-call/api-call.component';
+import { RootEffects } from './api-call/store/effects';
+import { rootReducer } from './api-call/store/reducer';
+import { EffectsModule } from '@ngrx/effects';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BasicComponent,
+    ApiCallComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    StoreModule.forRoot(reducers, { metaReducers }),
+    HttpClientModule,
+    // StoreModule.forRoot({}),
+    // StoreModule.forRoot(reducers, { metaReducers }),
+
+    // StoreModule.forRoot({ count: counterReducer }),
+
+    EffectsModule.forRoot([RootEffects]),
+    StoreModule.forRoot({ rootState: rootReducer}),
+
+    // for debugging enable this instrument in development mode
     !environment.production ? StoreDevtoolsModule.instrument() : [],
+
     CustomerModule
 
   ],

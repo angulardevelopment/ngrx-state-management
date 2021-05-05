@@ -2,16 +2,18 @@
 state management using ngrx
 
 packages used-
-@ngrx/store, @ngrx/store-devtools
+@ngrx/store, @ngrx/store-devtools, @ngrx/effects, 
 
-@ngrx/effects, @ngrx/schematics, @ngrx/entity, @ngrx/schematics@latest
+@ngrx/entity, @ngrx/schematics@latest
 
-Setup-
+Setup customer folder-
 ng generate module Customer
 ng generate class models/customer
+
 ng generate action customer/store/action/Customer
 ng generate reducer customer/store/reducer/Customer
 ng generate selector customer/store/selector/Customer
+
 ng generate component customer/CustomerView
 ng generate component customer/CustomerAdd
 
@@ -22,6 +24,12 @@ StoreModule.forFeature(customerFeatureKey, reducer),
 Add the exports-
 exports: [CustomerViewComponent,CustomerAddComponent]
 
+Basic component folder-
+reducer includes (main code +1, -1, 0)
+store includes action(increment , decrement, reset)
+component includes selector (final data) 
+
+Install Redux dev tool chrome extension
 
 # Ngrx
 

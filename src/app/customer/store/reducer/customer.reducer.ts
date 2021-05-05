@@ -1,4 +1,9 @@
-// import { Action, createReducer, on } from '@ngrx/store';
+// import { Action, createReducer, on,   ActionReducer,
+  // ActionReducerMap,
+  // createFeatureSelector,
+  // createSelector,
+  // MetaReducer } from '@ngrx/store';
+  // import { environment } from '../../environments/environment';
 
 
 // export const customerFeatureKey = 'customer';
@@ -11,11 +16,24 @@
 
 // };
 
+// export const reducers: ActionReducerMap<State> = {
+
+// };
 
 // export const reducer = createReducer(
 //   initialState,
 
 // );
+// export const metaReducers: MetaReducer<State>[] = !environment.production ? [] : [];
+
+
+
+
+
+
+
+
+
 
 import {Action, createReducer, on} from '@ngrx/store';
 import * as CustomerActions from '../action/customer.actions';

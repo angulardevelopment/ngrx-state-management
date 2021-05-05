@@ -8,6 +8,8 @@ import {customerFeatureKey, reducer} from './store/reducer/customer.reducer';
   declarations: [CustomerViewComponent, CustomerAddComponent],
   imports: [
     CommonModule,
+
+    // to lazy load store
     StoreModule.forFeature(customerFeatureKey, reducer),
   ],
   exports: [CustomerViewComponent,CustomerAddComponent]
