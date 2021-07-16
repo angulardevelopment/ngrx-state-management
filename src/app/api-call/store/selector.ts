@@ -3,7 +3,7 @@ import { RootState } from './reducer';
 
 const getError = (state: RootState): string => state.error;
 const getSelectedData = (state: RootState): any => state.selectedMockData;
-// const getMapMode = (state: RootState): any => state.mode;
+
 
 const getStateError = createSelector(
   (state: any) => state.rootState,

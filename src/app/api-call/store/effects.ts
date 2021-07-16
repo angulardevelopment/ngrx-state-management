@@ -38,9 +38,13 @@ export class RootEffects {
     //     )
     //   )
     // )
+
+    // directly calling the effect
     public getMockDataEffect$ = createEffect(
       () => this.actions$
         .pipe(
+          // pass action in oftype
+          // ofType subscribes to the source stream of actions and pushes matching actions to the resulting stream. So it is indeed called once.
           ofType(ApiGetMockData),
           mergeMap((action) =>
             this.http.get(
@@ -78,6 +82,7 @@ export class RootEffects {
 
 @Injectable({ providedIn: 'root' })
 export class MockApiService {
+  // not in use
   getDataFromId(id: string): Observable<any> {
     // mock data Observable mapped from the passed id
     // delayed of 1000 ms
@@ -87,6 +92,7 @@ export class MockApiService {
     )
   }
 
+  // not in use
   getApiError(): Observable<any> {
     // getting an error after 1s
     return of(0).pipe(

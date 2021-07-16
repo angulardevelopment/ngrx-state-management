@@ -16,11 +16,16 @@ export class ApiCallComponent  {
   JSON = JSON;
 
   constructor(private store: Store) {
+    // with the store method you will get the data
+    //   in  select method you need to pass selector
     this.error$ = this.store.select(getStateError);
     this.data$ = this.store.select(getStateSelectedData);
   }
 
   getApiData() {
+    // with the dispatch you can send data
+    //   in  dispatch method you need to pass action
+
     this.store.dispatch(ApiGetMockData({id: 'randomId'}));
   }
 

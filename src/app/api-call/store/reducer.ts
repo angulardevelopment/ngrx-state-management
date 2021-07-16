@@ -3,6 +3,7 @@ import { ApiError, ApiSuccess } from './action';
 
 // !! ApiGetMockData and ApiGetMockDataWithError not used because it is handled in ./effects
 
+// in reducer we define state, initial state, call actions using on and return final data
 export interface RootState {
   error: any;
   selectedMockData: { id: string, data: string };
@@ -12,6 +13,7 @@ const initialState: RootState = {
   error: null,
   selectedMockData: null,
 }
+
 
 export const rootReducer = createReducer(initialState,
   on(ApiError, (state, action) => ({ error: action.error, selectedMockData: null })),

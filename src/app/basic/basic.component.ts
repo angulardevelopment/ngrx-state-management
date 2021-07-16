@@ -14,6 +14,7 @@ export class BasicComponent {
 
   constructor(private store: Store<{ count: number }>) {
     this.count$ = store.pipe(select('count'));
+
   }
 
   increment() {
