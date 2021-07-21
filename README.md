@@ -24,6 +24,15 @@ StoreModule.forFeature(customerFeatureKey, reducer),
 Add the exports-
 exports: [CustomerViewComponent,CustomerAddComponent]
 
+
+create reducer and its initial state 
+create action
+add functionality in reducer (using actions that you created)
+create selector and return data
+create effects
+
+dispatch - call action
+
 Basic component folder-
 reducer includes (main code +1, -1, 0)
 store includes action(increment , decrement, reset)
