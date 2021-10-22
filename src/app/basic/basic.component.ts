@@ -9,7 +9,10 @@ import { decrement, increment, reset } from './counter.action';
   styleUrls: ['./basic.component.scss']
 })
 export class BasicComponent {
-
+  // Basic component folder-
+  // reducer includes (main code +1, -1, 0)
+  // store includes action(increment , decrement, reset)
+  // component includes selector (final data)
   count$: Observable<number>;
 
   constructor(private store: Store<{ count: number }>) {

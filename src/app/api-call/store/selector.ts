@@ -3,6 +3,7 @@ import { RootState } from './reducer';
 
 const getError = (state: RootState): string => state.error;
 const getSelectedData = (state: RootState): any => state.selectedMockData;
+const logData = (state: RootState) => state.JSONMockData;
 
 
 const getStateError = createSelector(
@@ -17,3 +18,9 @@ const getStateSelectedData = createSelector(
 
 
 export { getStateError, getStateSelectedData }
+
+export const getOtpLoginToken = createSelector(
+  (state: any) => state.rootState,
+  logData
+
+);

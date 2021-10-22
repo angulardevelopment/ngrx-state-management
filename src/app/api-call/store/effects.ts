@@ -8,6 +8,7 @@ import { switchMap, catchError, map, mergeMap,delay, tap, concatMap, exhaustMap 
 
 import { HttpClient } from '@angular/common/http';
 import { ApiError, ApiGetMockData, ApiSuccess } from './action';
+import * as DemoAction from './action';
 
 @Injectable()
 export class RootEffects {
@@ -21,6 +22,56 @@ export class RootEffects {
 
 
   constructor(private actions$: Actions, private http: HttpClient) { }
+
+      // directly calling the effect
+      public getMockDataEffect$ = createEffect(
+        () => this.actions$
+          .pipe(
+            // pass action in oftype
+            // ofType subscribes to the source stream of actions and pushes matching actions to the resulting stream. So it is indeed called once.
+            ofType(ApiGetMockData),
+            mergeMap((action) =>
+              this.http.get(
+               'https://jsonplaceholder.typicode.com/posts/1'
+              ).pipe(
+                map(res => {
+                  return ApiSuccess({ data: res })
+                }), catchError((err, caught: Observable<any>) => {
+                  return throwError(err)
+                })
+              )
+            )
+          )
+      );
+
+      public getUserProfile$ = createEffect(
+        () => this.actions$.pipe(
+
+          ofType(DemoAction.setJSONData),
+
+          mergeMap(() =>
+            this.http.get<any>(
+              'https://jsonplaceholder.typicode.com/posts',
+            ).pipe(
+              map(res => res),
+            )
+          ),
+
+
+          mergeMap((res) =>
+
+          [
+            DemoAction.setJSONData(res)
+
+          ]),
+
+          catchError(err => {
+            console.log(err, 'err');
+
+            return [
+            ];
+          })
+        ));
 
     // effect from simulating an API call success
     // getMockDataEffect$ = createEffect(
@@ -39,28 +90,7 @@ export class RootEffects {
     //   )
     // )
 
-    // directly calling the effect
-    public getMockDataEffect$ = createEffect(
-      () => this.actions$
-        .pipe(
-          // pass action in oftype
-          // ofType subscribes to the source stream of actions and pushes matching actions to the resulting stream. So it is indeed called once.
-          ofType(ApiGetMockData),
-          mergeMap((action) =>
-            this.http.get(
-             'https://jsonplaceholder.typicode.com/posts/1'
-            ).pipe(
-              map(res => {
-                console.log(res, 'response');
-                return ApiSuccess({ data: res })
-              }), catchError((err, caught: Observable<any>) => {
-                console.log(err, 'err');
-                return throwError(err)
-              })
-            )
-          )
-        )
-    );
+
     // effect for simulating an API error
     // getMockDataWithErrorEffect$ = createEffect(
     //   () => this.actions$.pipe(

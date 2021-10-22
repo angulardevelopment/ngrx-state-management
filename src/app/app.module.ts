@@ -27,11 +27,10 @@ import { EffectsModule } from '@ngrx/effects';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    // other ways to add reducer
-    // StoreModule.forRoot({}),
-    // StoreModule.forRoot(reducers, { metaReducers }),
-    // StoreModule.forRoot({ count: counterReducer }),
-    StoreModule.forRoot({ rootState: rootReducer}),
+
+
+    StoreModule.forRoot({ rootState: rootReducer }),
+    // other ways to add reducer (reducers, { metaReducers }),({}), ({ rootState: rootReducer}) , { count: counterReducer })
 
     EffectsModule.forRoot([RootEffects]),  // here you can pass multiple effects
 

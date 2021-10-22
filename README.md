@@ -28,15 +28,12 @@ exports: [CustomerViewComponent,CustomerAddComponent]
 create reducer and its initial state 
 create action
 add functionality in reducer (using actions that you created)
-create selector and return data
-create effects
+create selector and return data - added in main module
+create effects  - in this we need to pass action to get data and another action to pass data
 
 dispatch - call action
 
-Basic component folder-
-reducer includes (main code +1, -1, 0)
-store includes action(increment , decrement, reset)
-component includes selector (final data) 
+
 
 Install Redux dev tool chrome extension
 
