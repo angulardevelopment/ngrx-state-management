@@ -4,7 +4,6 @@ import * as DemoAction from './action';
 
 // !! ApiGetMockData and ApiGetMockDataWithError not used because it is handled in ./effects
 
-// in reducer we define state, initial state, call actions using on and return final data
 export interface RootState {
   error: any;
   selectedMockData: { id: string, data: string };
