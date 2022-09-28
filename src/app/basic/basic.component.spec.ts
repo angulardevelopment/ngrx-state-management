@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { BasicComponent } from './basic.component';
+import { provideMockStore } from '@ngrx/store/testing';
 
 describe('BasicComponent', () => {
   let component: BasicComponent;
@@ -8,7 +9,9 @@ describe('BasicComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BasicComponent ]
+      declarations: [ BasicComponent ],
+      providers: [provideMockStore({})],
+
     })
     .compileComponents();
   });
@@ -21,5 +24,10 @@ describe('BasicComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  fit('should create', () => {
+    component.increment();
+    // expect(component).toBeTruthy();
   });
 });

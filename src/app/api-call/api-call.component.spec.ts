@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideMockStore } from '@ngrx/store/testing';
 
 import { ApiCallComponent } from './api-call.component';
 
@@ -8,7 +9,8 @@ describe('ApiCallComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ApiCallComponent ]
+      declarations: [ ApiCallComponent ],
+      providers: [provideMockStore({})],
     })
     .compileComponents();
   });

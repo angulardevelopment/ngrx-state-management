@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideMockStore } from '@ngrx/store/testing';
 
 import { CustomerAddComponent } from './customer-add.component';
 
@@ -8,7 +9,9 @@ describe('CustomerAddComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CustomerAddComponent ]
+      declarations: [ CustomerAddComponent ],
+      providers: [provideMockStore({})],
+
     })
     .compileComponents();
   }));
