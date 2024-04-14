@@ -11,8 +11,8 @@ import { environment } from '../environments/environment';
 
 import { CustomerModule } from './customer/customer.module';
 // import { reducers, metaReducers } from './reducers';
-import { BasicComponent } from './basic/basic.component';
-import { counterReducer } from './basic/counter.reducer';
+import { CounterComponent } from './counter/counter.component';
+import { counterReducer } from './counter/counter.reducer';
 import { ApiCallComponent } from './api-call/api-call.component';
 import { RootEffects } from './api-call/store/effects';
 import { rootReducer } from './api-call/store/reducer';
@@ -20,7 +20,7 @@ import { EffectsModule } from '@ngrx/effects';
 @NgModule({
   declarations: [
     AppComponent,
-    BasicComponent,
+    CounterComponent,
     ApiCallComponent
   ],
   imports: [

@@ -4,11 +4,11 @@ import { Observable } from 'rxjs';
 import { decrement, increment, reset } from './counter.action';
 
 @Component({
-  selector: 'app-basic',
-  templateUrl: './basic.component.html',
-  styleUrls: ['./basic.component.scss']
+  selector: 'app-counter',
+  templateUrl: './counter.component.html',
+  styleUrls: ['./counter.component.scss']
 })
-export class BasicComponent {
+export class CounterComponent {
 
   count$: Observable<number>;
 

@@ -1,15 +1,15 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BasicComponent } from './basic.component';
+import { CounterComponent } from './counter.component';
 import { provideMockStore } from '@ngrx/store/testing';
 
-describe('BasicComponent', () => {
-  let component: BasicComponent;
-  let fixture: ComponentFixture<BasicComponent>;
+describe('CounterComponent', () => {
+  let component: CounterComponent;
+  let fixture: ComponentFixture<CounterComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BasicComponent ],
+      declarations: [ CounterComponent ],
       providers: [provideMockStore({})],
 
     })
@@ -17,7 +17,7 @@ describe('BasicComponent', () => {
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BasicComponent);
+    fixture = TestBed.createComponent(CounterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
