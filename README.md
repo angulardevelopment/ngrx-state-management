@@ -22,6 +22,11 @@ I'm Sam, and I'm passionate about product engineering and web development. I cre
 ### About the app
 Implemented NGRX.
 
+### Packages used
+-    "@ngrx/effects": "^13.2.0",
+-    "@ngrx/store": "^13.2.0",
+-    "@ngrx/store-devtools": "^13.2.0",
+
 ## Subscribe and Stay Updated!
 
 Don't miss out on new videos! Subscribe to my channel and hit the notification bell 🔔 to receive updates whenever I upload fresh content. Let's learn, laugh, and explore together!
