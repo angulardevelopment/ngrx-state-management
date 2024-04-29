@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
-import { ApiGetMockData, ApiGetMockDataWithError } from './store/action';
+import { ApiGetMockData, ApiGetMockDataWithError, setJSONData } from './store/action';
 import { getStateError, getStateSelectedData } from './store/selector';
 
 @Component({
@@ -27,6 +27,13 @@ export class ApiCallComponent  {
 
   getError() {
     this.store.dispatch(ApiGetMockDataWithError({id: 'randomId'}));
+  }
+
+    getjsonData() {
+    this.store.dispatch(setJSONData({
+  prop1: 'string',
+  prop2: 'string'
+}));
   }
 
 
