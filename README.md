@@ -21,6 +21,7 @@ I'm Sam, and I'm passionate about product engineering and web development. I cre
 
 ### About the app
 Implemented NGRX.
+ngrx data prepare proper CRUD
 
 ### Packages used
 -    "@ngrx/effects": "^13.2.0",
