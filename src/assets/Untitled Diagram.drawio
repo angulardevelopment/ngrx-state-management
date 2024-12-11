@@ -1,0 +1,31 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0" version="25.0.1">
+  <diagram name="Page-1" id="5mysFQsV4ZWX_kwKuC0m">
+    <mxGraphModel dx="786" dy="511" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c-1ZV3eGMzXLSj5ywE6z-2" value="&lt;span id=&quot;docs-internal-guid-c8ac723c-7fff-67bf-d2d2-f48536fbec44&quot;&gt;&lt;span style=&quot;font-size: 10.5pt; font-family: &amp;quot;Courier New&amp;quot;, monospace; color: rgb(36, 36, 36); background-color: rgb(249, 249, 249); font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;states/models &lt;/span&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="180" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c-1ZV3eGMzXLSj5ywE6z-3" value="&lt;span id=&quot;docs-internal-guid-ac520947-7fff-9859-375a-e960f3f8c602&quot;&gt;&lt;span style=&quot;font-size: 10.5pt; font-family: &amp;quot;Courier New&amp;quot;, monospace; color: rgb(36, 36, 36); background-color: rgb(249, 249, 249); font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;&amp;nbsp;favorite-product&lt;/span&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="210" y="80" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c-1ZV3eGMzXLSj5ywE6z-4" value="&lt;span id=&quot;docs-internal-guid-1fbeba7b-7fff-be33-efeb-5096d3f82dd7&quot;&gt;&lt;span style=&quot;font-size: 15pt; font-family: Arial, sans-serif; color: rgb(36, 36, 36); background-color: rgb(255, 255, 255); font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;action&lt;/span&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="220" y="180" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c-1ZV3eGMzXLSj5ywE6z-5" value="&lt;span id=&quot;docs-internal-guid-cf6f9e32-7fff-ff66-55ef-f3f973803466&quot;&gt;&lt;span style=&quot;font-size: 15pt; font-family: Arial, sans-serif; color: rgb(36, 36, 36); background-color: rgb(255, 255, 255); font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;reducer&lt;/span&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="330" y="180" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c-1ZV3eGMzXLSj5ywE6z-6" value="&lt;span id=&quot;docs-internal-guid-6f8ce7ed-7fff-36da-5bfa-c478ae17e42b&quot;&gt;&lt;span style=&quot;font-size: 15pt; font-family: Arial, sans-serif; color: rgb(36, 36, 36); background-color: rgb(255, 255, 255); font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;Selector&lt;/span&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="450" y="180" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c-1ZV3eGMzXLSj5ywE6z-7" value="&lt;span id=&quot;docs-internal-guid-3fa233b2-7fff-8cb2-8f47-b9e2ba67c759&quot;&gt;&lt;span style=&quot;font-size: 15pt; font-family: Arial, sans-serif; color: rgb(36, 36, 36); background-color: rgb(255, 255, 255); font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;module&lt;/span&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="180" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c-1ZV3eGMzXLSj5ywE6z-8" value="&lt;span id=&quot;docs-internal-guid-e767aa79-7fff-d1fd-4a8c-2d2075f76091&quot;&gt;&lt;span style=&quot;font-family: Arial, sans-serif; color: rgb(89, 89, 89); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; vertical-align: baseline; white-space-collapse: preserve;&quot;&gt;&lt;font&gt;Component&lt;/font&gt;&lt;/span&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="660" y="180" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

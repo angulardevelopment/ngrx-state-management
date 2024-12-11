@@ -1,0 +1,7 @@
+<p>home works!</p>
+<mat-icon [style.color]="product.isFavorite?'red':'black'" class="mat-icon-lg icon"
+(click)="addProductToFavorites(product)" >favorite</mat-icon>
+
+<mat-icon [style.color]="'red'"
+matBadge="{{(favoritesProducts | async)?.length}}"
+matBadgePosition="above after">favorite</mat-icon>
