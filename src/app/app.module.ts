@@ -22,32 +22,27 @@ import { HomeComponent } from './product/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    BasicComponent,
-    ApiCallComponent,
-    HomeComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-
-    // StoreModule.forRoot({ count: counterReducer, rootState: rootReducer }),
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        // StoreModule.forRoot({ count: counterReducer, rootState: rootReducer }),
         // other ways to add reducer (reducers, { metaReducers }),({}),
-    StoreModule.forRoot({favorite:favoriteReducer}),
-
-    EffectsModule.forRoot([RootEffects]),  // here you can pass multiple effects
-
-    // for debugging enable this instrument in development mode
-    !environment.production ? StoreDevtoolsModule.instrument() : [],
-
-    CustomerModule,
-    MatIconModule,
-    BrowserAnimationsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+        StoreModule.forRoot({ favorite: favoriteReducer }),
+        EffectsModule.forRoot([RootEffects]), // here you can pass multiple effects
+        // for debugging enable this instrument in development mode
+        !environment.production ? StoreDevtoolsModule.instrument() : [],
+        CustomerModule,
+        MatIconModule,
+        BrowserAnimationsModule,
+        AppComponent,
+        BasicComponent,
+        ApiCallComponent,
+        HomeComponent,
+        StoreModule.forRoot({}, {})
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

@@ -9,10 +9,9 @@ describe('CounterComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CounterComponent ],
-      providers: [provideMockStore({})],
-
-    })
+    imports: [CounterComponent],
+    providers: [provideMockStore({})],
+})
     .compileComponents();
   });
 

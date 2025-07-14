@@ -2,11 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { select, Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { decrement, increment, reset } from './counter.action';
+import { AsyncPipe } from '@angular/common';
 
 @Component({
   selector: 'app-counter',
   templateUrl: './counter.component.html',
-  styleUrls: ['./counter.component.scss']
+  styleUrls: ['./counter.component.scss'],
+  standalone: true,
+  imports: [AsyncPipe]
 })
 export class CounterComponent {
 

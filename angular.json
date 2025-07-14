@@ -69,18 +69,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ngrx:build"
+            "buildTarget": "ngrx:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ngrx:build:production"
+              "buildTarget": "ngrx:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngrx:build"
+            "buildTarget": "ngrx:build"
           }
         },
         "test": {
@@ -129,7 +129,6 @@
       }
     }
   },
-  "defaultProject": "ngrx",
   "cli": {
     "analytics": "19f12d17-5ab0-4550-a0e3-7192b9d9ddc5"
   }

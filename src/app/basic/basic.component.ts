@@ -2,11 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { select, Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { decrement, increment, reset } from './counter.action';
+import { AsyncPipe } from '@angular/common';
 
 @Component({
   selector: 'app-basic',
   templateUrl: './basic.component.html',
-  styleUrls: ['./basic.component.scss']
+  styleUrls: ['./basic.component.scss'],
+  standalone: true,
+  imports: [AsyncPipe]
 })
 export class BasicComponent {
 

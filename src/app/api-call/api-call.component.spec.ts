@@ -9,9 +9,9 @@ describe('ApiCallComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ApiCallComponent ],
-      providers: [provideMockStore({})],
-    })
+    imports: [ApiCallComponent],
+    providers: [provideMockStore({})],
+})
     .compileComponents();
   });
 

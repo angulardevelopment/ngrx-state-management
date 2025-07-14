@@ -9,10 +9,9 @@ describe('CustomerAddComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CustomerAddComponent ],
-      providers: [provideMockStore({})],
-
-    })
+    imports: [CustomerAddComponent],
+    providers: [provideMockStore({})],
+})
     .compileComponents();
   }));
 

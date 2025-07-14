@@ -9,10 +9,9 @@ describe('BasicComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BasicComponent ],
-      providers: [provideMockStore({})],
-
-    })
+    imports: [BasicComponent],
+    providers: [provideMockStore({})],
+})
     .compileComponents();
   });
 

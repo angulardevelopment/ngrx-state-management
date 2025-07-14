@@ -3,11 +3,14 @@ import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
 import { ApiGetMockData, ApiGetMockDataWithError, setJSONData } from './store/action';
 import { getStateError, getStateSelectedData } from './store/selector';
+import { AsyncPipe } from '@angular/common';
 
 @Component({
   selector: 'app-api-call',
   templateUrl: './api-call.component.html',
-  styleUrls: ['./api-call.component.scss']
+  styleUrls: ['./api-call.component.scss'],
+  standalone: true,
+  imports: [AsyncPipe]
 })
 export class ApiCallComponent  {
 

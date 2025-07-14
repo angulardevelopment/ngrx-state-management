@@ -7,7 +7,8 @@ import {CustomerState} from '../store/reducer/customer.reducer';
 @Component({
   selector: 'app-customer-view',
   templateUrl: './customer-view.component.html',
-  styleUrls: ['./customer-view.component.css']
+  styleUrls: ['./customer-view.component.css'],
+  standalone: true
 })
 export class CustomerViewComponent implements OnInit {
 

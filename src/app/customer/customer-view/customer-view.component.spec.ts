@@ -9,10 +9,9 @@ describe('CustomerViewComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CustomerViewComponent ],
-      providers: [provideMockStore({})],
-
-    })
+    imports: [CustomerViewComponent],
+    providers: [provideMockStore({})],
+})
     .compileComponents();
   }));
 

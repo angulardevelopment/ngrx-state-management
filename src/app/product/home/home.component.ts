@@ -7,11 +7,15 @@ import { AppState } from '../models/AppState';
 import { Router } from '@angular/router';
 import { add } from '../action';
 import { StorageService } from '../storage.service';
-
+import { AsyncPipe } from '@angular/common';
+import { MatIcon } from '@angular/material/icon';
+import {MatBadgeModule} from '@angular/material/badge';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
+  imports: [AsyncPipe, MatIcon, MatBadgeModule],
+  standalone: true
 })
 export class HomeComponent implements OnInit {
   favoritesProducts:Observable<Array<FavoriteProduct>> = this.store.pipe(select(selectProducts))

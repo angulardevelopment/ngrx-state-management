@@ -8,7 +8,8 @@ import { addCustomer } from '../store/action/customer.actions';
 @Component({
   selector: 'app-customer-add',
   templateUrl: './customer-add.component.html',
-  styleUrls: ['./customer-add.component.css']
+  styleUrls: ['./customer-add.component.css'],
+  standalone: true
 })
 export class CustomerAddComponent implements OnInit {
 

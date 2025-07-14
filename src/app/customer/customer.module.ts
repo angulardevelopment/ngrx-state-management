@@ -9,11 +9,11 @@ import { CustomerComponent } from './customer/customer.component';
 // Its used with lazy loaded reducers. When you have (lazy loaded) feature modules and you want to register reducers within that module, then you use forFeature. Otherwise, in your AppModule you use forRoot.
 
 @NgModule({
-  declarations: [CustomerViewComponent, CustomerAddComponent, CustomerComponent],
-  imports: [
-    CommonModule,
-    StoreModule.forFeature(customerFeatureKey, reducer),
-  ],
-  exports: [CustomerViewComponent,CustomerAddComponent]
+    imports: [
+        CommonModule,
+        StoreModule.forFeature(customerFeatureKey, reducer),
+        CustomerViewComponent, CustomerAddComponent, CustomerComponent,
+    ],
+    exports: [CustomerViewComponent, CustomerAddComponent]
 })
 export class CustomerModule { }
