@@ -20,13 +20,72 @@ I'm Sam, and I'm passionate about product engineering and web development. I cre
 
 
 ### About the app
-Implemented NGRX.
-ngrx data prepare proper CRUD
+
+
+---
+
+## 🎤 Talk Title
+
+**Mastering NgRx: Scalable State Management for Real-World Angular Applications**
+
+---
+
+## 📌 Abstract
+
+State management becomes complex as Angular applications scale. In this session, we’ll explore how to effectively use NgRx to build predictable, maintainable, and scalable applications.
+
+You’ll learn how to integrate APIs using NgRx Effects, implement full CRUD operations with proper state handling, structure feature stores correctly, and understand *why* NgRx is needed in large-scale applications. This session focuses on practical, real-world patterns — not just theory.
+
+By the end, you’ll walk away with a clear mental model of how NgRx works and how to apply it confidently in production projects.
+
+---
+
+## 📖 Detailed Description
+
+Managing application state is one of the biggest challenges in enterprise Angular applications. Without a structured approach, state quickly becomes inconsistent, hard to debug, and difficult to scale.
+
+In this hands-on, demo-driven session, we will cover:
+
+### 🔹 Why NgRx?
+
+* When simple services aren’t enough
+* Problems NgRx solves (predictability, traceability, scalability)
+* Understanding the Redux pattern in Angular
+
+### 🔹 Core Concepts
+
+* Actions, Reducers, Selectors
+* Creating and structuring the Store
+* Feature-based state architecture
+* Maintaining normalized and consistent state
+
+### 🔹 Working with APIs
+
+* Calling APIs using NgRx Effects
+* Handling loading, success, and error states
+* Managing side effects cleanly
+
+### 🔹 CRUD with NgRx
+
+* Creating, Reading, Updating, Deleting data
+* Optimistic vs pessimistic updates
+* Managing entity collections efficiently
+
+### 🔹 Best Practices
+
+* Feature store organization
+* Folder structure for scalability
+* Debugging with NgRx DevTools
+* Avoiding common anti-patterns
+
+This session is ideal for Angular developers who want to move from basic state handling to production-ready state architecture using NgRx.
 
 ### Packages used
--    "@ngrx/effects": "^13.2.0",
--    "@ngrx/store": "^13.2.0",
--    "@ngrx/store-devtools": "^13.2.0",
+
+### Repos url
+- [ngrx-state-management](https://github.com/angulardevelopment/ngrx-state-management.git)
+- [movie](https://github.com/angulardevelopment/movie.git)
+- [todo app](https://github.com/angulardevelopment/todo-crud-app.git)
 
 ## Subscribe and Stay Updated!
 
