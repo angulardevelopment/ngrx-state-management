@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { select, Store } from '@ngrx/store';
 import { FavoriteProduct } from '../models/FavoriteProduct';
 import { Observable } from 'rxjs';
@@ -18,6 +18,7 @@ import {MatBadgeModule} from '@angular/material/badge';
   standalone: true
 })
 export class HomeComponent implements OnInit {
+  private store:Store<AppState> = inject(Store<AppState>);
   favoritesProducts:Observable<Array<FavoriteProduct>> = this.store.pipe(select(selectProducts))
   product: FavoriteProduct = {  id: 1,
     name: 'string',
@@ -25,7 +26,7 @@ export class HomeComponent implements OnInit {
     image: 'string', isFavorite: false};
     
   constructor(private readonly storageService:StorageService<FavoriteProduct[]>,
-    private router: Router,  private store:Store<AppState>){}
+    private router: Router){}
 
   addProductToFavorites(product:FavoriteProduct){
      const favoriteProduct:FavoriteProduct = {
